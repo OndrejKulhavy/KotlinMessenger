@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "tvuj emaile je: " + email)
             Log.d("MainActivity", "tvoje heslo je: " + password)
             Log.d("MainActivity", "tvuj uzivatelske jmeno je: " + username)
-            Log.d("MainActivity", "---------------------------------------------------")
+            Log.d("MainActivity", "----------------------------------------------------")
         }
 
 
