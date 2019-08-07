@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "tvuj uzivatelske jmeno je: " + username)
             Log.d("MainActivity", "----------------------------------------------------")
         }
+        Already_have_an_acount_edittext.setOnClickListener(){
+            Log.d("MainActivity", "Funguje nacitani loginu")
+        }
 
 
 
