@@ -1,5 +1,6 @@
 package com.example.kotlinmessenger
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
         Already_have_an_acount_edittext.setOnClickListener(){
             Log.d("MainActivity", "Funguje nacitani loginu")
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
 
