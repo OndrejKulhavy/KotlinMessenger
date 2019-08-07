@@ -14,7 +14,7 @@
             android:id="@+id/username_edittext"
             android:paddingLeft="20dp"
 
-            android:background="@android:color/background_light" android:layout_marginTop="108dp"
+            android:background="@drawable/rounded" android:layout_marginTop="212dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="32dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp"
             android:layout_marginStart="32dp"
@@ -27,7 +27,7 @@
             android:ems="10"
             android:id="@+id/email_edittext"
             android:paddingLeft="20dp"
-            android:background="@android:color/background_light" android:layout_marginTop="8dp"
+            android:background="@drawable/rounded" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/username_edittext"
             app:layout_constraintStart_toStartOf="@+id/username_edittext"
             app:layout_constraintEnd_toEndOf="@+id/username_edittext"
@@ -39,12 +39,14 @@
             android:ems="10"
             android:paddingLeft="20dp"
             android:id="@+id/password_edittext"
-            android:background="@android:color/background_light" android:layout_marginTop="8dp"
+            android:background="@drawable/rounded" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/email_edittext"
             app:layout_constraintEnd_toEndOf="@+id/username_edittext"
             app:layout_constraintStart_toStartOf="@+id/username_edittext" android:hint="Heslo"/>
     <Button
             android:text="Registrovat"
+            android:background="@drawable/rounded_button"
+            android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/register_button" android:layout_marginTop="24dp"
@@ -64,15 +66,16 @@
             android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/register_button"
             app:layout_constraintStart_toStartOf="@+id/register_button"
             app:layout_constraintEnd_toEndOf="@+id/register_button"/>
-    <TextView
-            android:text="Registrace"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Registrace_nadpis"
-            android:textColor="@android:color/background_light" android:textSize="36sp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+    <Button
+            android:text="Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/photo_button_circle"
+            android:id="@+id/select_photo_button"
+            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/username_edittext"
+            app:layout_constraintStart_toStartOf="@+id/username_edittext"
             app:layout_constraintEnd_toEndOf="@+id/username_edittext"
-            app:layout_constraintStart_toStartOf="@+id/username_edittext"/>
+            app:layout_constraintHorizontal_bias="0.497" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.541"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
